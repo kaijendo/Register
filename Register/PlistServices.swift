@@ -33,7 +33,7 @@ class PlistServices {
         }
         // 1: Kiểm tra các giá trị lấy ra từ plist
         
-        print("get \(plist): \n \(result) ")
+        // print("get \(plist): \n \(result) ")
         return result
         
     }

@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _ PlistServices().getDictionaryFrom(plist: "Cities.plist")
+        let _ = DataServices.shared.cities
         // Do any additional setup after loading the view, typically from a nib.
     }
 
