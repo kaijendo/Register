@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FF0F15A61E7522B10072B28C /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0F15A51E7522B10072B28C /* Districts.plist */; };
+		FF8542DE1E8286770000A9CA /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FF8542DD1E8286770000A9CA /* readme.rtf */; };
 		FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E21E74F131008A3442 /* AppDelegate.swift */; };
 		FF9F34E51E74F131008A3442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E41E74F131008A3442 /* ViewController.swift */; };
 		FF9F34E81E74F131008A3442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34E61E74F131008A3442 /* Main.storyboard */; };
 		FF9F34EA1E74F131008A3442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34E91E74F131008A3442 /* Assets.xcassets */; };
 		FF9F34ED1E74F131008A3442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34EB1E74F131008A3442 /* LaunchScreen.storyboard */; };
 		FF9F34F51E74F184008A3442 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34F41E74F184008A3442 /* Cities.plist */; };
+		FFD1D4901E75A0810032375E /* PlistServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1D48F1E75A0810032375E /* PlistServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF0F15A51E7522B10072B28C /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
+		FF8542DD1E8286770000A9CA /* readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
 		FF9F34DF1E74F131008A3442 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9F34E21E74F131008A3442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9F34E41E74F131008A3442 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		FF9F34EC1E74F131008A3442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9F34EE1E74F131008A3442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9F34F41E74F184008A3442 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		FFD1D48F1E75A0810032375E /* PlistServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		FF9F34D61E74F131008A3442 = {
 			isa = PBXGroup;
 			children = (
+				FF8542DD1E8286770000A9CA /* readme.rtf */,
 				FF9F34E11E74F131008A3442 /* Register */,
 				FF9F34E01E74F131008A3442 /* Products */,
 			);
@@ -60,6 +65,7 @@
 			children = (
 				FF9F34E21E74F131008A3442 /* AppDelegate.swift */,
 				FF9F34E41E74F131008A3442 /* ViewController.swift */,
+				FFD1D48F1E75A0810032375E /* PlistServices.swift */,
 				FF9F34F41E74F184008A3442 /* Cities.plist */,
 				FF0F15A51E7522B10072B28C /* Districts.plist */,
 				FF9F34E61E74F131008A3442 /* Main.storyboard */,
@@ -134,6 +140,7 @@
 				FF0F15A61E7522B10072B28C /* Districts.plist in Resources */,
 				FF9F34EA1E74F131008A3442 /* Assets.xcassets in Resources */,
 				FF9F34E81E74F131008A3442 /* Main.storyboard in Resources */,
+				FF8542DE1E8286770000A9CA /* readme.rtf in Resources */,
 				FF9F34F51E74F184008A3442 /* Cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9F34E51E74F131008A3442 /* ViewController.swift in Sources */,
+				FFD1D4901E75A0810032375E /* PlistServices.swift in Sources */,
 				FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

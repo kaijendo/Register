@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let _ PlistServices().getDictionaryFrom(plist: "Cities.plist")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
