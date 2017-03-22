@@ -18,31 +18,11 @@ class DataServices {
         }
         get {
             if _cities == nil {
-                updateCities()
+                update(places: &(_cities), fromFileName: "Cities.plist", rootKey: "Cities")
             }
             return _cities
         }
     }
-    
-    func updateCities() {
-        _cities = []
-        let fileName = "Cities.plist"
-        guard let root = PlistServices().getDictionaryFrom(plist: fileName) else {
-            return
-        }
-        
-        // 2: Lấy ra một mảng dữ liệu thông qua key "Cities"
-        
-        guard let cityDictionaries = root["Cities"] as? [Dictionary<AnyHashable, Any>] else {return}
-        
-        for dict in cityDictionaries {
-            if let city = City(dict: dict) {
-                _cities.append(city)
-            }
-        }
-        print(cities)
-    }
-    
     private var _districts: [District]!
     var districts: [District] {
         set {
@@ -50,30 +30,29 @@ class DataServices {
         }
         get {
             if _districts == nil {
-                updateDistricts()
+                update(places: &_districts, fromFileName: "Districts.plist", rootKey: "Districts")
             }
             return _districts
         }
     }
     
-    func updateDistricts() {
-        _districts = []
-        
-        let fileName = "Districts.plist"
+    
+    func update<T: PlaceProtocol>(places: inout [T]!, fromFileName fileName: String, rootKey: String) {
+        places = []
         guard let root = PlistServices().getDictionaryFrom(plist: fileName) else {
             return
         }
         
-        // 2: Lấy ra một mảng dữ liệu thông qua key "District"
+        // 2: Lấy ra một mảng dữ liệu thông qua key "Cities"
         
-        guard let cityDictionaries = root["Districts"] as? [Dictionary<AnyHashable, Any>] else {return}
+        guard let placeDictionaries = root[rootKey] as? [Dictionary<AnyHashable, Any>] else {return}
         
-        for dict in cityDictionaries {
-            if let district = District(dict: dict) {
-                _districts.append(district)
+        for dict in placeDictionaries {
+            if let place = T(dict: dict) {
+                places.append(place)
             }
         }
-        print(districts)
+        print(places)
     }
     
 }

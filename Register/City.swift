@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct City {
+struct City: PlaceProtocol {
     var name = ""
     var code = 0
     

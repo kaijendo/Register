@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct District {
+struct District: PlaceProtocol{
     var name = ""
     var cityCode = 0
     var districtCode = 0
