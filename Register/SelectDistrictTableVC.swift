@@ -19,3 +19,22 @@ class SelectDistrictTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 }
+
+// MARK: - UITableViewDataSource
+
+extension SelectDistrictTableVC {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataServices.shared.districts.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellID.districtCell, for: indexPath)
+        configureCell(cell: cell, forRowAtIndexPath: indexPath)
+        return cell
+    }
+    
+    func configureCell(cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {
+        cell.textLabel?.text = DataServices.shared.districts[indexPath.row].name
+    }
+}

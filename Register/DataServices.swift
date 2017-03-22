@@ -36,7 +36,6 @@ class DataServices {
         }
     }
     
-    
     func update<T: PlaceProtocol>(places: inout [T]!, fromFileName fileName: String, rootKey: String) {
         places = []
         guard let root = PlistServices().getDictionaryFrom(plist: fileName) else {

@@ -15,6 +15,7 @@
 		FF9F34F51E74F184008A3442 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34F41E74F184008A3442 /* Cities.plist */; };
 		FFB3F6FC1E82960C00A1B20A /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3F6FB1E82960C00A1B20A /* District.swift */; };
 		FFB3F6FE1E829EB900A1B20A /* PlaceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3F6FD1E829EB900A1B20A /* PlaceProtocol.swift */; };
+		FFB3F7001E82A30800A1B20A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3F6FF1E82A30800A1B20A /* Contants.swift */; };
 		FFD1D48C1E7564130032375E /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1D48B1E7564130032375E /* DataServices.swift */; };
 		FFD1D4901E75A0810032375E /* PlistServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1D48F1E75A0810032375E /* PlistServices.swift */; };
 		FFD874201E760F900022C82F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD8741F1E760F900022C82F /* City.swift */; };
@@ -33,6 +34,7 @@
 		FF9F34F41E74F184008A3442 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
 		FFB3F6FB1E82960C00A1B20A /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
 		FFB3F6FD1E829EB900A1B20A /* PlaceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceProtocol.swift; sourceTree = "<group>"; };
+		FFB3F6FF1E82A30800A1B20A /* Contants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		FFD1D48B1E7564130032375E /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		FFD1D48F1E75A0810032375E /* PlistServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistServices.swift; sourceTree = "<group>"; };
 		FFD8741F1E760F900022C82F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				FF9F34E91E74F131008A3442 /* Assets.xcassets */,
 				FF9F34EB1E74F131008A3442 /* LaunchScreen.storyboard */,
 				FF9F34EE1E74F131008A3442 /* Info.plist */,
+				FFB3F6FF1E82A30800A1B20A /* Contants.swift */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				FFD874251E760FFE0022C82F /* SelectCityTableVC.swift in Sources */,
 				FFD1D4901E75A0810032375E /* PlistServices.swift in Sources */,
 				FFD874271E7610300022C82F /* SelectDistrictTableVC.swift in Sources */,
+				FFB3F7001E82A30800A1B20A /* Contants.swift in Sources */,
 				FFB3F6FE1E829EB900A1B20A /* PlaceProtocol.swift in Sources */,
 				FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */,
 				FFB3F6FC1E82960C00A1B20A /* District.swift in Sources */,
