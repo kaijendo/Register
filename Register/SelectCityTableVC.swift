@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SelectCityTableVC: UITableViewController {
+class SelectCityTableVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _ = DataServices.shared.cities
+        data = DataServices.shared.cities
 
         // Uncomment the following line to preserve selection between presentations
          self.clearsSelectionOnViewWillAppear = false
@@ -27,23 +27,4 @@ class SelectCityTableVC: UITableViewController {
             DataServices.shared.selectedCity = DataServices.shared.cities[selectedIndex.row]
         }
     }
-}
-// MARK: - UITableViewDataSource
-
-extension SelectCityTableVC {
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataServices.shared.cities.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellID.cityCell, for: indexPath)
-        configureCell(cell: cell, forRowAtIndexPath: indexPath)
-        return cell
-    }
-    
-    func configureCell(cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {
-        cell.textLabel?.text = DataServices.shared.cities[indexPath.row].name
-    }
-
 }

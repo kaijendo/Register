@@ -11,4 +11,6 @@ import Foundation
 struct CellID {
     static let cityCell = "CityCell"
     static let districtCell = "DistrictCell"
+    static let generalCell = "General Cell"
+
 }

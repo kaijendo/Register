@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF0F15A61E7522B10072B28C /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0F15A51E7522B10072B28C /* Districts.plist */; };
+		FF7839781E833465007FAD01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7839771E833465007FAD01 /* BaseViewController.swift */; };
 		FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E21E74F131008A3442 /* AppDelegate.swift */; };
 		FF9F34E81E74F131008A3442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34E61E74F131008A3442 /* Main.storyboard */; };
 		FF9F34EA1E74F131008A3442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34E91E74F131008A3442 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		FF0F15A51E7522B10072B28C /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
+		FF7839771E833465007FAD01 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF9F34DF1E74F131008A3442 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9F34E21E74F131008A3442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9F34E71E74F131008A3442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				FFD874241E760FFE0022C82F /* SelectCityTableVC.swift */,
 				FFD874261E7610300022C82F /* SelectDistrictTableVC.swift */,
+				FF7839771E833465007FAD01 /* BaseViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				FFD874251E760FFE0022C82F /* SelectCityTableVC.swift in Sources */,
 				FFD1D4901E75A0810032375E /* PlistServices.swift in Sources */,
 				FFD874271E7610300022C82F /* SelectDistrictTableVC.swift in Sources */,
+				FF7839781E833465007FAD01 /* BaseViewController.swift in Sources */,
 				FFB3F7001E82A30800A1B20A /* Contants.swift in Sources */,
 				FFB3F6FE1E829EB900A1B20A /* PlaceProtocol.swift in Sources */,
 				FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */,
