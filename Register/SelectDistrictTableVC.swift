@@ -25,7 +25,7 @@ class SelectDistrictTableVC: UITableViewController {
 extension SelectDistrictTableVC {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataServices.shared.districts.count
+        return DataServices.shared.districtsAtSelectedCity?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,6 +35,6 @@ extension SelectDistrictTableVC {
     }
     
     func configureCell(cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {
-        cell.textLabel?.text = DataServices.shared.districts[indexPath.row].name
+        cell.textLabel?.text =  DataServices.shared.districtsAtSelectedCity?[indexPath.row].name ?? ""
     }
 }

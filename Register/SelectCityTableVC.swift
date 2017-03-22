@@ -20,6 +20,13 @@ class SelectCityTableVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedIndex = tableView.indexPathForSelectedRow {
+            DataServices.shared.selectedCity = DataServices.shared.cities[selectedIndex.row]
+        }
+    }
 }
 // MARK: - UITableViewDataSource
 
@@ -38,4 +45,5 @@ extension SelectCityTableVC {
     func configureCell(cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {
         cell.textLabel?.text = DataServices.shared.cities[indexPath.row].name
     }
+
 }

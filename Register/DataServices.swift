@@ -36,6 +36,18 @@ class DataServices {
         }
     }
     
+    var selectedCity: City? {
+        didSet {
+            if selectedCity != nil {
+                districtsAtSelectedCity = districts.filter{$0.cityCode == selectedCity!.code}
+            } else {
+                districtsAtSelectedCity = nil
+            }
+        }
+    }
+    
+    var districtsAtSelectedCity: [District]?
+    
     func update<T: PlaceProtocol>(places: inout [T]!, fromFileName fileName: String, rootKey: String) {
         places = []
         guard let root = PlistServices().getDictionaryFrom(plist: fileName) else {
