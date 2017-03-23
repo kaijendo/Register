@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF0F15A61E7522B10072B28C /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0F15A51E7522B10072B28C /* Districts.plist */; };
+		FF3387CC1E8392D800FB8895 /* SelectAgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3387CB1E8392D800FB8895 /* SelectAgeVC.swift */; };
 		FF7839781E833465007FAD01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7839771E833465007FAD01 /* BaseViewController.swift */; };
 		FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E21E74F131008A3442 /* AppDelegate.swift */; };
 		FF9F34E81E74F131008A3442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9F34E61E74F131008A3442 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		FF0F15A51E7522B10072B28C /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
+		FF3387CB1E8392D800FB8895 /* SelectAgeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAgeVC.swift; sourceTree = "<group>"; };
 		FF7839771E833465007FAD01 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF9F34DF1E74F131008A3442 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9F34E21E74F131008A3442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				FFD874261E7610300022C82F /* SelectDistrictTableVC.swift */,
 				FF7839771E833465007FAD01 /* BaseViewController.swift */,
 				FFB4257D1E838EE60036E9A5 /* SelectGenderTableVC.swift */,
+				FF3387CB1E8392D800FB8895 /* SelectAgeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				FFB3F6FE1E829EB900A1B20A /* PlaceProtocol.swift in Sources */,
 				FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */,
 				FFB4257E1E838EE60036E9A5 /* SelectGenderTableVC.swift in Sources */,
+				FF3387CC1E8392D800FB8895 /* SelectAgeVC.swift in Sources */,
 				FFB3F6FC1E82960C00A1B20A /* District.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

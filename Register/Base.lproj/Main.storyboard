@@ -154,6 +154,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="0zL-fC-dxe" secondAttribute="trailing" id="waI-BD-zNN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JZp-xr-KUN" kind="show" id="0Uf-wz-44W"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="vVS-Im-0wF">
                                         <rect key="frame" x="0.0" y="414" width="375" height="61"/>
@@ -176,6 +179,9 @@
                                                 <constraint firstItem="6R2-oU-1Cr" firstAttribute="top" secondItem="Ih2-Mg-vMV" secondAttribute="topMargin" id="pix-nG-dmK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JZp-xr-KUN" kind="show" id="NOw-Pm-qDX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="XDw-Yy-LWa">
                                         <rect key="frame" x="0.0" y="475" width="375" height="61"/>
@@ -198,6 +204,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="hy0-VI-3KH" secondAttribute="bottom" id="iLv-8a-WOP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JZp-xr-KUN" kind="show" id="rAi-k5-DKd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -212,5 +221,66 @@
             </objects>
             <point key="canvasLocation" x="2760.8000000000002" y="181.25937031484258"/>
         </scene>
+        <!--Select AgeVC-->
+        <scene sceneID="hQn-Pm-XqU">
+            <objects>
+                <viewController id="JZp-xr-KUN" customClass="SelectAgeVC" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RQU-W7-fFf"/>
+                        <viewControllerLayoutGuide type="bottom" id="0jM-cM-cmr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jg3-qS-UNt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn tuổi của bạn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSJ-ba-RqX">
+                                <rect key="frame" x="16" y="64" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hJC-iP-3xg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-96-5NO">
+                                <rect key="frame" x="0.0" y="275.5" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="3BA-vV-H2l"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="JZp-xr-KUN" id="qIK-iL-KYO"/>
+                                    <outlet property="delegate" destination="JZp-xr-KUN" id="af7-qe-z7J"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moH-YB-8Kh">
+                                <rect key="frame" x="112" y="567" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HPy-42-fD8"/>
+                                    <constraint firstAttribute="width" constant="150" id="rr9-hW-kE2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Chọn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6mr-96-5NO" firstAttribute="centerY" secondItem="jg3-qS-UNt" secondAttribute="centerY" constant="50" id="A7c-H9-3z8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bSJ-ba-RqX" secondAttribute="trailing" id="Lu6-2T-aTs"/>
+                            <constraint firstItem="6mr-96-5NO" firstAttribute="leading" secondItem="jg3-qS-UNt" secondAttribute="leading" id="MOE-yp-ykb"/>
+                            <constraint firstAttribute="trailing" secondItem="6mr-96-5NO" secondAttribute="trailing" id="UIS-Jx-Ydf"/>
+                            <constraint firstItem="0jM-cM-cmr" firstAttribute="top" secondItem="moH-YB-8Kh" secondAttribute="bottom" constant="50" id="dXW-9m-uwZ"/>
+                            <constraint firstItem="bSJ-ba-RqX" firstAttribute="leading" secondItem="jg3-qS-UNt" secondAttribute="leadingMargin" id="jMN-OO-cFl"/>
+                            <constraint firstItem="moH-YB-8Kh" firstAttribute="centerX" secondItem="jg3-qS-UNt" secondAttribute="centerX" id="xiX-Wb-T6z"/>
+                            <constraint firstItem="bSJ-ba-RqX" firstAttribute="top" secondItem="RQU-W7-fFf" secondAttribute="bottom" id="ym1-v1-uPX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5o-wP-tv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="202"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rAi-k5-DKd"/>
+    </inferredMetricsTieBreakers>
 </document>
