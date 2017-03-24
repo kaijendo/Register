@@ -13,7 +13,7 @@
         <!--Select City TableVC-->
         <scene sceneID="Ljg-In-i9T">
             <objects>
-                <tableViewController storyboardIdentifier="SelectCityTableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jMu-nT-rNt" customClass="SelectCityTableVC" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SelectCityTableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="jMu-nT-rNt" customClass="SelectCityTableVC" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="boV-in-y2Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Select District TableVC-->
         <scene sceneID="Adf-go-FAj">
             <objects>
-                <tableViewController storyboardIdentifier="SelectDistrictTableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rx5-2a-dAG" customClass="SelectDistrictTableVC" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SelectDistrictTableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="Rx5-2a-dAG" customClass="SelectDistrictTableVC" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ker-sp-udi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
         <!--Table View Controller-->
         <scene sceneID="UuV-Xt-qUO">
             <objects>
-                <tableViewController id="KQy-7L-LrV" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="KQy-7L-LrV" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4lY-8M-o8z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
