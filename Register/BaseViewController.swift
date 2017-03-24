@@ -11,6 +11,11 @@ import UIKit
 class BaseViewController : UITableViewController {
     var data : [PlaceProtocol]?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.clearsSelectionOnViewWillAppear = false
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data?.count ?? 0
     }
