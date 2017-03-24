@@ -12,6 +12,12 @@ class SelectAgeVC: UIViewController {
 
     var ageList: [Int] = Array(18...200)
     
+    @IBOutlet weak var confirmAgeButton : Button! {
+        didSet {
+            confirmAgeButton.isEnabled = false 
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,5 +51,8 @@ extension SelectAgeVC: UIPickerViewDataSource {
 extension SelectAgeVC: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\(ageList[row]) tuổi"
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        confirmAgeButton.isEnabled = true
     }
 }

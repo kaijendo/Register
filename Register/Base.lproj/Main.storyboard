@@ -291,6 +291,9 @@
                             <constraint firstItem="bSJ-ba-RqX" firstAttribute="top" secondItem="RQU-W7-fFf" secondAttribute="bottom" id="ym1-v1-uPX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmAgeButton" destination="moH-YB-8Kh" id="QRi-gq-TnN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5o-wP-tv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
