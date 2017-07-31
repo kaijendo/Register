@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4421DD171F2F7D4C00ABF455 /* PlistServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421DD161F2F7D4C00ABF455 /* PlistServices.swift */; };
 		FF0F15A61E7522B10072B28C /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0F15A51E7522B10072B28C /* Districts.plist */; };
 		FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E21E74F131008A3442 /* AppDelegate.swift */; };
 		FF9F34E51E74F131008A3442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F34E41E74F131008A3442 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4421DD161F2F7D4C00ABF455 /* PlistServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistServices.swift; sourceTree = "<group>"; };
 		FF0F15A51E7522B10072B28C /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
 		FF9F34DF1E74F131008A3442 /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9F34E21E74F131008A3442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FF9F34E91E74F131008A3442 /* Assets.xcassets */,
 				FF9F34EB1E74F131008A3442 /* LaunchScreen.storyboard */,
 				FF9F34EE1E74F131008A3442 /* Info.plist */,
+				4421DD161F2F7D4C00ABF455 /* PlistServices.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4421DD171F2F7D4C00ABF455 /* PlistServices.swift in Sources */,
 				FF9F34E51E74F131008A3442 /* ViewController.swift in Sources */,
 				FF9F34E31E74F131008A3442 /* AppDelegate.swift in Sources */,
 			);
